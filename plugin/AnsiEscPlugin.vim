@@ -13,7 +13,7 @@ set cpo&vim
 
 " ---------------------------------------------------------------------
 "  Public Interface: {{{1
-com! -bang -nargs=0 AnsiEsc	:call AnsiEsc#AnsiEsc(<bang>0)
+com! -bang -nargs=0 AnsiEsc	:silent! call AnsiEsc#AnsiEsc(<bang>0)
 
 " DrChip Menu Support: {{{2
 if !exists('g:no_drchip_menu') && !exists('g:no_ansiesc_menu')
